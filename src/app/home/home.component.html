@@ -1,12 +1,15 @@
-<header>Projects</header>
-<div class="projects">
-    <div class="section">
-        <button class="button" routerLink="accordion">Accordion</button>
-    </div>
-    <div id="my-el" class="section">
-        <button class="button" routerLink="template-variables"><span>Template Variables</span></button>
-    </div>
-    <div class="section">
-        <button class="button">Login</button>
-    </div>
-</div>
+<app-header [backButton]="false" title="Projects"></app-header>
+<ion-content>
+  <ion-list lines="none" class="projects">
+    <ion-item class="section">
+      <ion-button class="button" routerLink="accordion">Accordion</ion-button>
+    </ion-item>
+    <ion-item id="my-el" class="section">
+      <ion-button class="button" routerLink="template-variables">
+				Template Variables
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<!-- <div class="projects">
+</div> -->

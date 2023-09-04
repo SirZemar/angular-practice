@@ -3,8 +3,10 @@
   flex-wrap: wrap;
   .section {
     .button {
+      font-size: 0.8rem;
+      white-space: pre-wrap;
       width: 100px;
-      height: 20px;
+      height: 50px;
       margin: 10px;
     }
   }

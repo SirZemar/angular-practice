@@ -5,17 +5,17 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { TemplateVariablesComponent } from './template-variables/template-variables.component';
+import { IonicModule } from '@ionic/angular';
+import { HeaderComponentModule } from '../common/components/header/header.component';
 
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    AccordionComponent,
-    TemplateVariablesComponent
-  ],
+  declarations: [HomeComponent, AccordionComponent, TemplateVariablesComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
-  ]
+    HomeRoutingModule,
+    IonicModule,
+    HeaderComponentModule,
+  ],
 })
-export class HomeModule { }
+export class HomeModule {}
